@@ -1,5 +1,6 @@
 package ml.e2z1.skyblockmod.qol;
 
+import ml.e2z1.skyblockmod.config.Settings;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.inventory.GuiChest;
 import net.minecraft.client.gui.inventory.GuiContainer;
@@ -12,12 +13,13 @@ public class BitProfit {
 
     @SubscribeEvent
     public void onTick(GuiOpenEvent event) {
-        if (Minecraft.getMinecraft().currentScreen instanceof GuiChest) {
-            GuiChest eventGui = (GuiChest) Minecraft.getMinecraft().currentScreen;
-            ContainerChest cc = (ContainerChest) eventGui.inventorySlots;
-            String containerName = cc.getLowerChestInventory().getDisplayName().getUnformattedText();
-            System.out.println(containerName);
+        if(Settings.bitProfit) {
+            if (Minecraft.getMinecraft().currentScreen instanceof GuiChest) {
+                GuiChest eventGui = (GuiChest) Minecraft.getMinecraft().currentScreen;
+                ContainerChest cc = (ContainerChest) eventGui.inventorySlots;
+                String containerName = cc.getLowerChestInventory().getDisplayName().getUnformattedText();
+                System.out.println(containerName);
+            }
         }
-
     }
 }

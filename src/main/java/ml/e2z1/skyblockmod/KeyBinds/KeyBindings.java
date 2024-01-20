@@ -6,10 +6,9 @@ import org.lwjgl.input.Keyboard;
 
 public class KeyBindings {
 
-    public static KeyBinding autoFarm;
-    public static KeyBinding autoRotate;
+    public static KeyBinding joinDungeon;
     public static void init() {
-        autoFarm = new KeyBinding("key.automation.farming", Keyboard.KEY_COMMA, "key.esb.automation");
-        ClientRegistry.registerKeyBinding(autoFarm);
+        joinDungeon = new KeyBinding("key.qol.dungeons", Keyboard.KEY_NUMPAD5, "key.esb.joinDungeon");
+        ClientRegistry.registerKeyBinding(joinDungeon);
     }
 }

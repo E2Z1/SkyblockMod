@@ -18,7 +18,7 @@ public class SkyBlockMod {
     public static SkyBlockMod instance;
     public static final String MOD_NAME = "E2Z1' Skyblock Mod";
     public static final String MOD_ID = "esb";
-    public static final String MOD_VERSION = "1.0";
+    public static final String MOD_VERSION = "2.0";
     public Settings config;
 
 
@@ -29,9 +29,8 @@ public class SkyBlockMod {
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new KeyInputHandler());
         MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.automation.joinSkyblock());
-        MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.qol.BitProfit());
+        //MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.qol.BitProfit());
         MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.autoaccept.autoAccept());
-        MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.automation.Farm());
         EssentialAPI.getCommandRegistry().registerCommand(new EsbCommand());
         KeyBindings.init();
     }

@@ -14,13 +14,13 @@ import java.util.concurrent.TimeUnit;
 
 public class joinSkyblock {
     private boolean worldJustLoaded = false;
-    @SubscribeEvent(priority = EventPriority.HIGH)
+    @SubscribeEvent()
     public void onWorldLoad(WorldEvent.Load event) {
         this.worldJustLoaded = true;
     }
 
 
-    @SubscribeEvent(priority = EventPriority.HIGH)
+    @SubscribeEvent()
     public void onTick(TickEvent.PlayerTickEvent event) {
         if (!this.worldJustLoaded) return;
         worldJustLoaded = false;
