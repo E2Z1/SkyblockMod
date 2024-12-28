@@ -20,6 +20,8 @@ public class Settings extends Vigilant {
     public static boolean skyblockOnJoin = true;
     @Property(type = PropertyType.SWITCH, name = "Bit Profit", description = "Calculates Bit Profit", category = "Quality of Life", subcategory = "Skyblock")
     public static boolean bitProfit = true;
+    @Property(type = PropertyType.SWITCH, name = "Snake Tracer", description = "Traces Snakes in the Rift", category = "Quality of Life", subcategory = "Skyblock")
+    public static boolean snakeTracing = true;
 
 
 

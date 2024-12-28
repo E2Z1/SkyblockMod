@@ -32,6 +32,8 @@ public class SkyBlockMod {
         //MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.qol.BitProfit());
         MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.autoaccept.autoAccept());
         MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.autoaccept.autoWarp());
+        MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.qol.NetworkHandler());
+        MinecraftForge.EVENT_BUS.register(new ml.e2z1.skyblockmod.qol.SnakeTracer());
         EssentialAPI.getCommandRegistry().registerCommand(new EsbCommand());
         KeyBindings.init();
     }
