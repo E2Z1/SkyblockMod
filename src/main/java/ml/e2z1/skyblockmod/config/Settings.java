@@ -9,14 +9,16 @@ import java.io.File;
 
 
 public class Settings extends Vigilant {
-    @Property(type = PropertyType.SWITCH, name = "Main", description = "Enable AutoAccept", category = "AutoAccept")
+    @Property(type = PropertyType.SWITCH, name = "AutoAccept", description = "Automatically accept partys", category = "AutoAccept")
     public static boolean autoAccept = true;
+    @Property(type = PropertyType.SWITCH, name = "AutoWarp", description = "Warps players when they write 'warp'", category = "AutoAccept")
+    public static boolean autoWarp = true;
     @Property(type = PropertyType.TEXT, name = "Whose partys to accept", description = "Seperate names by a space", category = "AutoAccept")
     public static String acceptPlayers = "Hypixel Technoblade";
 
-    @Property(type = PropertyType.SWITCH, name = "Play Skyblock on join", description = "Immediatly joins Skyblock on join", category = "Main", subcategory = "Skyblock")
+    @Property(type = PropertyType.SWITCH, name = "Play Skyblock on join", description = "Immediately joins Skyblock on join", category = "Quality of Life", subcategory = "Skyblock")
     public static boolean skyblockOnJoin = true;
-    @Property(type = PropertyType.SWITCH, name = "Bit Profit", description = "Calculates Bit Profit", category = "Main", subcategory = "Skyblock")
+    @Property(type = PropertyType.SWITCH, name = "Bit Profit", description = "Calculates Bit Profit", category = "Quality of Life", subcategory = "Skyblock")
     public static boolean bitProfit = true;
 
 
