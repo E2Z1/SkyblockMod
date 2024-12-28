@@ -18,7 +18,7 @@ public class SkyBlockMod {
     public static SkyBlockMod instance;
     public static final String MOD_NAME = "E2Z1' Skyblock Mod";
     public static final String MOD_ID = "esb";
-    public static final String MOD_VERSION = "2.0";
+    public static final String MOD_VERSION = "2.5";
     public Settings config;
 
 
